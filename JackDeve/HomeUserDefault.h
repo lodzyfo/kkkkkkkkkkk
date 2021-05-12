@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LoginModel.h"
+#import "DengLu.h"
 @interface HomeUserDefault : NSObject
 /** 存储*/
-+ (void)userDefaultWithModel:(LoginModel *)model;
++ (void)userDefaultWithModel:(Data *)model;
 /** 取值*/
-+ (LoginModel *)getUserDefault;
++ (Data *)getUserDefault;
 /** 删值*/
 + (void)deleteAllData;
 

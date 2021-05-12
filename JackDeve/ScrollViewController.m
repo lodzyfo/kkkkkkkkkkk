@@ -23,9 +23,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.view.backgroundColor =[UIColor whiteColor];
     self.navigationItem.title =@"阳光快车";
-    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor blackColor]}];
     self.navigationController.navigationBar.barTintColor=[UIColor whiteColor];
     //创建一个添加按钮
     UIButton *navLeftBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 5, 20, 20)];
@@ -146,7 +147,6 @@
     [self.SG titleBtnSelectedWithScrollView:scrollView];
     
 }
-// 让屏幕一直横屏显示
 - (BOOL)shouldAutorotate
 
 {
@@ -157,28 +157,29 @@
 - (void)setIndex:(NSInteger)index {
     switch (index) {
         case 0: {    // 订单
-            [self.navigationController pushViewController:[OrderFromViewController new] animated:NO];
             // 取用户本地信息
-//          LoginModel *model = [HomeUserDefault getUserDefault];
-//          if (model.token) {
-//            dispatch_async(dispatch_get_main_queue(), ^{
-//                 [self.navigationController pushViewController:[OrderFromViewController new] animated:NO];
-//            });
-//            } else {
-//            [SVProgressHUD showErrorWithStatus:@"请您登录"];
-//            [SVProgressHUD dismissWithDelay:1];
-//          LoginViewController *loginVc = [[LoginViewController alloc] init];
-//            //loginVc.push = YES;
-//        [self.navigationController pushViewController:loginVc animated:YES];
-//                        }
+          Data *model = [HomeUserDefault getUserDefault];
+          if (model.token) {
+              OrderFromViewController * VC =[[OrderFromViewController alloc]init];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                 [self.navigationController pushViewController:VC animated:NO];
+            });
+            } else {
+            [SVProgressHUD showErrorWithStatus:@"请您登录"];
+            [SVProgressHUD dismissWithDelay:1];
+          LoginViewController *loginVc = [[LoginViewController alloc] init];
+            //loginVc.push = YES;
+        [self.navigationController pushViewController:loginVc animated:YES];
+                        }
         }
             break;
         case 1: {    // 余额
             // 取用户本地信息
-            LoginModel *model = [HomeUserDefault getUserDefault];
+            Data *model = [HomeUserDefault getUserDefault];
             if (model.token) {
+                BalanceViewController * VC =[[BalanceViewController alloc]init];
                 dispatch_async(dispatch_get_main_queue(), ^{
-                   [self.navigationController pushViewController:[BalanceViewController new] animated:NO];
+                   [self.navigationController pushViewController:VC animated:NO];
                 });
                 
             } else {
@@ -194,10 +195,11 @@
             break;
         case 2:  {    // 地址
             // 取用户本地信息
-            LoginModel *model = [HomeUserDefault getUserDefault];
+            Data *model = [HomeUserDefault getUserDefault];
             if (model.token) {
+                AddressViewController * VC =[[AddressViewController alloc]init];
                 dispatch_async(dispatch_get_main_queue(), ^{
-                   [self.navigationController pushViewController:[AddressViewController new] animated:NO];
+                   [self.navigationController pushViewController:VC animated:NO];
                 });
                 
             } else {
@@ -217,11 +219,13 @@
 
 // 点击用户头像跳转
 - (void)setPush:(BOOL)push {
-    LoginModel *model = [HomeUserDefault getUserDefault];
+    Data *model = [HomeUserDefault getUserDefault];
     if (model.token) {
         AccountViewController *accountVc = [[AccountViewController alloc] init];
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self.navigationController pushViewController:accountVc animated:YES];
+            
+            [self.navigationController pushViewController:accountVc animated:NO];
+            
         });
         
         
@@ -229,7 +233,10 @@
         
         LoginViewController *login = [[LoginViewController alloc] init];
         //        login.push = YES;
-        [self.navigationController pushViewController:login animated:NO];
+        dispatch_async(dispatch_get_main_queue(), ^{
+             [self.navigationController pushViewController:login animated:NO];
+        });
+       
     }
 }
 
