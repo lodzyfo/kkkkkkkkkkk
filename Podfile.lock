@@ -27,9 +27,7 @@ PODS:
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
   - SVProgressHUD (2.1.2)
-  - Toast (3.1.0)
   - ViewDeck (3.1.0)
-  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking
@@ -40,9 +38,7 @@ DEPENDENCIES:
   - SDAutoLayout
   - SDWebImage
   - SVProgressHUD
-  - Toast
   - ViewDeck
-  - YYModel
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -54,10 +50,8 @@ SPEC CHECKSUMS:
   SDAutoLayout: 5a4b48d6b8a5172ae8d088d2879e40dd795e6251
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
-  Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
   ViewDeck: 942d90dd23c9f97cc8038be352255378167edcca
-  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 91f8959673f0e298838bb1ebd628187468219357
+PODFILE CHECKSUM: 1ed68339316392ebcc168bf915b081de3c936746
 
 COCOAPODS: 1.1.1

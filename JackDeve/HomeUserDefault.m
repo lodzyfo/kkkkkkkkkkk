@@ -13,7 +13,7 @@
 #define AVATAR_KEY @"avatar"
 #define IS_LOCKED_KEY @"is_locked"
 @implementation HomeUserDefault
-+ (void)userDefaultWithModel:(Data *)model {
++ (void)userDefaultWithModel:(LoginModel *)model {
     //创建
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     // 存储头像
@@ -30,9 +30,9 @@
     [[NSUserDefaults standardUserDefaults]synchronize];
 }
 
-+ (Data *)getUserDefault {
++ (LoginModel *)getUserDefault {
     // 初始化Model
-    Data *model = [[Data alloc] init];
+    LoginModel *model = [[LoginModel alloc] init];
     //创建
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     // 头像

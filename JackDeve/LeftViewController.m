@@ -15,7 +15,7 @@
 @interface LeftViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     Leftview * v;
-    Data *_model;
+    LoginModel *_model;
     
 }
 
@@ -32,7 +32,7 @@
         self.navigationController.navigationBarHidden = YES;
     }
     // 取用户本地信息
-    Data *model = [HomeUserDefault getUserDefault];
+    LoginModel *model = [HomeUserDefault getUserDefault];
     _model = model;
     v.nameLbl.text = _model.user_name ? _model.user_name : @"登录";
     if (_model.avatar.length == 0) {

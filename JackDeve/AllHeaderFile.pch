@@ -29,35 +29,17 @@
 #import <MAMapKit/MAMapKit.h>
 #import <AMapFoundationKit/AMapFoundationKit.h>
 
-
+#import "LoginModel.h"
 #import "HomeUserDefault.h"
 #import <SVProgressHUD.h>
 #import "LoginViewController.h"
-//主
+
 #import "MainViewController.h"
-//账户
 #import "AccountViewController.h"
-//订单
 #import "OrderFromViewController.h"
-//登录
 #import "LoginViewController.h"
-//头视图
-#import "XDLoginHeaderView.h"
-//尾视图
-#import "XDRegisterFooderView.h"
-//注册
-#import "RegisterViewController.h"
-//忘记密码
-#import "ForgetPasswordViewController.h"
-//正则
-#import "XDTools.h"
 
-#import <UIView+Toast.h>
-//左边抽屉式
-#import <ViewDeck.h>
 
-#import <YYModel.h>
-#import "DengLu.h"
 //获取屏幕 宽度、高度
 #define SCREEN_BOUNDS          [UIScreen mainScreen].bounds
 #define SCREEN_WIDTH           [UIScreen mainScreen].bounds.size.width
@@ -65,6 +47,9 @@
 
 //系统版本
 #define SYTEM_VERSION [[UIDevice currentDevice].systemVersion floatValue]
+
+//接口服务器
+#define ROOT_URL @"http://daohe.apic.1by1.cc"
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.

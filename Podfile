@@ -18,6 +18,5 @@ pod 'AMapSearch'
 pod 'AMap3DMap' 
 pod 'AMapLocation' 
 pod 'SVProgressHUD'
-pod 'Toast'
-pod 'YYModel'
+
 end
