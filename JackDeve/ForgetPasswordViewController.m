@@ -1,31 +1,31 @@
 //
-//  AccountViewController.m
+//  ForgetPasswordViewController.m
 //  JackDeve
 //
 //  Created by apple on 17/5/9.
 //  Copyright © 2017年 wkq. All rights reserved.
 //
 
-#import "AccountViewController.h"
+#import "ForgetPasswordViewController.h"
 
-@interface AccountViewController ()
+@interface ForgetPasswordViewController ()
 
 @end
 
-@implementation AccountViewController
+@implementation ForgetPasswordViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor=[UIColor whiteColor];
+     self.view.backgroundColor =[UIColor whiteColor];
     
     //创建一个添加按钮
     UIButton *navLeftBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 5, 20, 20)];
     [navLeftBtn setBackgroundImage:[UIImage imageNamed:@"左箭头"] forState:UIControlStateNormal];
     [navLeftBtn addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:navLeftBtn];
-    self.title =@"账户";
-    
+    self.title =@"注册";
 }
+
 //返回方法
 -(void)click
 {
