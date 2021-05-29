@@ -33,6 +33,8 @@
 		180C4F2A1EC1944E006709C4 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 180C4F241EC1944E006709C4 /* libSDWebImage.a */; };
 		180C4F2B1EC1944E006709C4 /* libSVProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 180C4F251EC1944E006709C4 /* libSVProgressHUD.a */; };
 		180C4F2C1EC1944E006709C4 /* libViewDeck.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 180C4F261EC1944E006709C4 /* libViewDeck.a */; };
+		183E20771EC2EB2C005B2E66 /* AccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E20761EC2EB2C005B2E66 /* AccountView.m */; };
+		183E207C1EC2EFFC005B2E66 /* AccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E207B1EC2EFFC005B2E66 /* AccountModel.m */; };
 		18621CD61EC2E26800EA28C7 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18621CD51EC2E26800EA28C7 /* RegisterViewController.m */; };
 		18621CDA1EC2E2CA00EA28C7 /* ForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18621CD91EC2E2CA00EA28C7 /* ForgetPasswordViewController.m */; };
 		18621CE31EC2E3C800EA28C7 /* XDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 18621CE21EC2E3C800EA28C7 /* XDTools.m */; };
@@ -112,6 +114,10 @@
 		180C4F241EC1944E006709C4 /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "../../Library/Developer/Xcode/DerivedData/JackDeve-cumwmceempoimrhkjoybbtpyintb/Build/Products/Debug-iphonesimulator/SDWebImage/libSDWebImage.a"; sourceTree = "<group>"; };
 		180C4F251EC1944E006709C4 /* libSVProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSVProgressHUD.a; path = "../../Library/Developer/Xcode/DerivedData/JackDeve-cumwmceempoimrhkjoybbtpyintb/Build/Products/Debug-iphonesimulator/SVProgressHUD/libSVProgressHUD.a"; sourceTree = "<group>"; };
 		180C4F261EC1944E006709C4 /* libViewDeck.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libViewDeck.a; path = "../../Library/Developer/Xcode/DerivedData/JackDeve-cumwmceempoimrhkjoybbtpyintb/Build/Products/Debug-iphonesimulator/ViewDeck/libViewDeck.a"; sourceTree = "<group>"; };
+		183E20751EC2EB2C005B2E66 /* AccountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountView.h; sourceTree = "<group>"; };
+		183E20761EC2EB2C005B2E66 /* AccountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountView.m; sourceTree = "<group>"; };
+		183E207A1EC2EFFC005B2E66 /* AccountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountModel.h; sourceTree = "<group>"; };
+		183E207B1EC2EFFC005B2E66 /* AccountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountModel.m; sourceTree = "<group>"; };
 		18621CD41EC2E26800EA28C7 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		18621CD51EC2E26800EA28C7 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		18621CD81EC2E2CA00EA28C7 /* ForgetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPasswordViewController.h; sourceTree = "<group>"; };
@@ -177,7 +183,6 @@
 		18901B191EC1A5D3006B99C5 /* AddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressViewController.h; sourceTree = "<group>"; };
 		18901B1A1EC1A5D3006B99C5 /* AddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressViewController.m; sourceTree = "<group>"; };
 		576779E10982F83BFB9F6DAD /* Pods-JackDeve.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JackDeve.release.xcconfig"; path = "Pods/Target Support Files/Pods-JackDeve/Pods-JackDeve.release.xcconfig"; sourceTree = "<group>"; };
-		6D0C8F9C1EC2E29900E6C51A /* AllHeaderFile.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllHeaderFile.pch; sourceTree = "<group>"; };
 		70C7C4F0403B4F33D26756E3 /* Pods-JackDeve.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JackDeve.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JackDeve/Pods-JackDeve.debug.xcconfig"; sourceTree = "<group>"; };
 		A64AB995DE25242E53F8946F /* libPods-JackDeve.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JackDeve.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -223,7 +228,6 @@
 			children = (
 				17F7F6D21EC09EEF00649651 /* AppDelegate.h */,
 				17F7F6D31EC09EEF00649651 /* AppDelegate.m */,
-				6D0C8F9C1EC2E29900E6C51A /* AllHeaderFile.pch */,
 				18901B241EC1B04F006B99C5 /* 左边内容 */,
 				180C4F0D1EC1470A006709C4 /* 业务处理的类 */,
 				180C4EE51EC13120006709C4 /* 首页 */,
@@ -535,6 +539,24 @@
 			name = pch;
 			sourceTree = "<group>";
 		};
+		183E20781EC2EB30005B2E66 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				183E207A1EC2EFFC005B2E66 /* AccountModel.h */,
+				183E207B1EC2EFFC005B2E66 /* AccountModel.m */,
+			);
+			name = M;
+			sourceTree = "<group>";
+		};
+		183E20791EC2EFD7005B2E66 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				183E20751EC2EB2C005B2E66 /* AccountView.h */,
+				183E20761EC2EB2C005B2E66 /* AccountView.m */,
+			);
+			name = V;
+			sourceTree = "<group>";
+		};
 		18621CD31EC2E25300EA28C7 /* 注册 */ = {
 			isa = PBXGroup;
 			children = (
@@ -668,6 +690,8 @@
 		18901B231EC1ABA4006B99C5 /* 账户 */ = {
 			isa = PBXGroup;
 			children = (
+				183E20781EC2EB30005B2E66 /* M */,
+				183E20791EC2EFD7005B2E66 /* V */,
 				18621CF91EC2E40E00EA28C7 /* C */,
 			);
 			name = "账户";
@@ -864,6 +888,7 @@
 				18901B181EC1A5B3006B99C5 /* BalanceViewController.m in Sources */,
 				17FEACF21EC1E109009E01E7 /* AllOrderView.m in Sources */,
 				180C4EFB1EC13914006709C4 /* SGImageButton.m in Sources */,
+				183E20771EC2EB2C005B2E66 /* AccountView.m in Sources */,
 				18621D301EC2E4EE00EA28C7 /* View+MASAdditions.m in Sources */,
 				18621CF81EC2E40700EA28C7 /* AccountViewController.m in Sources */,
 				18621CF21EC2E3DF00EA28C7 /* LoginView.m in Sources */,
@@ -873,6 +898,7 @@
 				17FEACD31EC1461E009E01E7 /* PreferentialModel.m in Sources */,
 				17FEACE51EC1A6ED009E01E7 /* AllOrderFromViewController.m in Sources */,
 				18621D2D1EC2E4EE00EA28C7 /* MASViewConstraint.m in Sources */,
+				183E207C1EC2EFFC005B2E66 /* AccountModel.m in Sources */,
 				17F7F6D11EC09EEF00649651 /* main.m in Sources */,
 				18621CFC1EC2E45300EA28C7 /* Leftview.m in Sources */,
 				18621D2A1EC2E4EE00EA28C7 /* MASConstraintMaker.m in Sources */,
@@ -1002,7 +1028,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = JackDeve/AllHeaderFile.pch;
 				INFOPLIST_FILE = JackDeve/Info.plist;
@@ -1010,7 +1035,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wkq.JackDeve;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "JackDeve/JackDeve-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -1023,7 +1047,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = JackDeve/AllHeaderFile.pch;
 				INFOPLIST_FILE = JackDeve/Info.plist;
@@ -1031,7 +1054,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wkq.JackDeve;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "JackDeve/JackDeve-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
