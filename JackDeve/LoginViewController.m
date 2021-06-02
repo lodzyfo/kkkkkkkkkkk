@@ -168,7 +168,7 @@
         NSLog(@"登录成功");
         
         DengLu * m=[[DengLu alloc]init];
-        //字典转模型
+        
         [m yy_modelSetWithDictionary:_dic];
         
         // 本地存储
