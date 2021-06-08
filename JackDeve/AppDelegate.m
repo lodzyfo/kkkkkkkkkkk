@@ -39,8 +39,10 @@
     
     //地图api
     [[AMapServices sharedServices]setApiKey:@"1ba9abc6231fb3f8dc6dac20a8721955"];
-    [[AMapServices sharedServices]setEnableHTTPS:YES];     //HTTPS
+    [[AMapServices sharedServices]setEnableHTTPS:YES];//HTTPS
+    [AMapServices sharedServices].crashReportEnabled = YES;//上传崩溃日志
 
+    
     return YES;
 }
 
